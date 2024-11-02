@@ -143,6 +143,7 @@ install_arch() {
         clang \
         cmake \
         curl \
+        fastfetch \
         ffmpeg \
         gcc \
         git \
@@ -160,6 +161,10 @@ install_arch() {
         unzip \
         wget \
         zsh
+
+    git clone https://aur.archlinux.org/yay-bin.git
+    cd yay-bin
+    makepkg -si
 }
 
 main() {
